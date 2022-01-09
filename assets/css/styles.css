@@ -1,0 +1,362 @@
+/* Slider
+/*-----------------------------------------------------------------------------------*/
+.slider_container{ width:1024px; margin:auto; clear:both; background:url(../images/shadow_top.png) no-repeat top center; padding:30px 0 0 0;}
+.slider_container img{width: 1024px; height: 600px; }
+.flex-caption{ position: absolute; top: 5px; left: 285px;}
+.caption_title_line{ width:450px; height:75px;margin-top: 10px; padding:5px 15px 10px 15px;background:rgba(255,0,0,0.7) repeat;color: #fff;text-align: center; font-size: 14px;}
+.flex-caption h2{ color:#fff;font-size:30px; padding:5px 0 5px 0; margin:0px;font-family: "Satisfy", serif; }
+
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+/*-----------------------------------------------------------------------------------*/ 
+.flexslider {width: 100%; margin: 0; padding: 0 0 30px 0;background:url(../images/shadow_bottom.png) no-repeat center bottom;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block; border:10px #ededed solid;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.flexslider {position: relative; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+.flex-container {zoom: 1; position: relative;}
+
+/* Direction Nav */
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:11px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(../images/nextt.png) no-repeat center; top:30px;}
+.flex-direction-nav li a.prev {background:url(../images/prevv.png) no-repeat center; top:30px; left:10px;}
+.flex-direction-nav li a.next:hover {background:url(../images/next_a.png) no-repeat center;}
+.flex-direction-nav li a.prev:hover {background:url(../images/prev_a.png) no-repeat center;}
+.flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+/* Media Queries
+/*-----------------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 1024px) {
+.slider_container{ width:90%; margin:0 0 0 2%; clear:both; background:none; padding:30px 0 0 0;}
+.slider_container img{height: 500px; margin-left: 25px;}
+.flexslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(../images/nextt.png) no-repeat center; bottom:85px; right: -15px;}
+.flex-direction-nav li a.prev {background:url(../images/prevv.png) no-repeat center;bottom:40px; left: 35px;}
+.flex-caption { display:none;}
+}
+@media (max-width: 600px){
+    .slider_container img{height: 300px; margin-left: 15px;}
+    .flex-direction-nav li a.prev {left: 25px;}
+    .flex-direction-nav li a.next {right: -5px;}
+}
+
+
+/* Login
+/*-----------------------------------------------------------------------------------*/
+.login-card {
+  padding: 50px;
+  width: 500px;
+  height: auto;
+  background:rgba(247, 247, 247, 0.8);
+  margin: 120px auto;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+}
+  
+.login-card h1 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.login-card .login{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.login-card a{
+  color: #545454;
+  font-size: 25px;
+}
+
+.login-card input{
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #545454;
+  border: 3px solid #545454;
+  border-top: 2px solid #535353;
+  border-radius: 25px;
+}
+
+input:hover {
+  border: 3px solid #545454;
+  border-top: 1px solid #fff;
+  color: blue;
+ }
+
+
+@media (max-width: 600px){
+  .login-card{
+    padding: 35px;
+    width: 350px;
+  }
+  .kayitform{
+    padding: 35px !important;
+    width: 350px !important;
+  }
+}
+
+
+/* kayitform
+/*-----------------------------------------------------------------------------------*/
+.kayitform{
+  background:rgba(247, 247, 247, 0.8);
+  width: 600px; 
+  margin: 40px auto; 
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.kayitform h1{
+  color: blue;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.kayitform label{
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.kayitform input{
+  width: 100%;
+  height: 50px;
+  border:2px solid blue;
+  border-radius: 25px;
+  font-size: 25px;
+  color: #545454;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input:hover {
+  border: 3px solid #545454;
+  border-top: 1px solid #fff;
+  color: blue;
+}
+
+.kayitform .signup{
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+/* updateform
+/*-----------------------------------------------------------------------------------*/
+.updateform{
+  background:rgba(247, 247, 247, 0.8);
+  width: 600px; 
+  margin: 40px auto; 
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.updateform h1{
+  color: blue;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.updateform label{
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.updateform input{
+  width: 100%;
+  height: 50px;
+  border:2px solid blue;
+  border-radius: 25px;
+  font-size: 25px;
+  color: #545454;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input:hover {
+  border: 3px solid #545454;
+  border-top: 1px solid #fff;
+  color: blue;
+}
+
+.updateform .update{
+  margin-top: 20px;
+}
+
+
+/* rezerveModal
+/*-----------------------------------------------------------------------------------*/
+.rezerveModal{
+  background:rgba(247, 247, 247, 0.8);
+  width: 600px; 
+  margin: 40px auto; 
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.rezerveModal h1{
+  color: blue;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.rezerveModal label{
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rezerveModal input{
+  width: 100%;
+  height: 50px;
+  border:2px solid blue;
+  border-radius: 25px;
+  font-size: 25px;
+  color: #545454;
+  text-align: center;
+}
+
+
+/* Kısım2
+/*-----------------------------------------------------------------------------------*/
+.kısım2 h2{
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Satisfy", serif;
+
+}
+@media (max-width: 1000px){
+  .kısım2 h2{
+    font-size: 23px;
+  }
+}
+
+.btn{
+  font-size: 25px;
+  border-radius: 25px;
+}
+.btn:hover{
+  background-color: #545454;
+}
+
+.islem{
+  font-size: 20px;
+  padding:0 12px;
+}
+
+
+
+@media (max-width: 768px){
+  .btn{
+    width: 70%;
+    font-size: 20px;
+  }
+  .islem{
+    font-size: 15px;
+    
+  }
+}
+
+
+/* hg
+/*-----------------------------------------------------------------------------------*/
+.hg{
+  color: red;
+  font-weight: 900;
+  margin-top: 40px;
+  font-size: 60px;
+}
+@media (max-width: 768px){
+  .hg{
+    font-size: 25px;
+  }
+}
+
+
+/* page-header
+/*-----------------------------------------------------------------------------------*/
+.page-header{
+  font-size: 60px;
+  color: red;
+  text-align: center;
+  margin-top: 25px;
+}
+.page-header small{
+  color: blue;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+  
+
+/*---------------------------------------------------------------------------------*/
+
+#btnrezerve{
+  width: 50%;
+  margin-top: 15px;
+}
+
+.modal-body{
+  padding: 0;
+}
+.modal-header{
+  padding: 0;
+}
+.form-group{
+  margin-bottom: 0;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+.cntr{
+  text-align: center;
+}
+.onay{
+  margin: 150px;
+  color: red;
+  text-align: center;
+}
+#date{
+  color: blue;
+  font-size: x-large;
+}
